@@ -24,6 +24,8 @@
 <br>
 
 ![teaser](https://github.com/user-attachments/assets/0a31a55c-d289-46d5-9b6f-23a71eb0b1cc)
+
+## Demo
 Demo videos are available at the [project page](https://liujf1226.github.io/Mono4DGS-HDR/).
 
 ## TODO
