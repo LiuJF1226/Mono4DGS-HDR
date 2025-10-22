@@ -14,7 +14,7 @@
 </p>
 
 <div align="center">
-    <a href=''><img src='https://img.shields.io/badge/ArXiv-Paper-b31b1b.svg'></a>  
+    <a href='https://arxiv.org/abs/2510.18489'><img src='https://img.shields.io/badge/ArXiv-Paper-b31b1b.svg'></a>  
     <a href='https://liujf1226.github.io/Mono4DGS-HDR/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  
     <a href=''><img src='https://img.shields.io/badge/Preprocessed-Data-blue'></a>  
     <!-- <a href='https://drive.google.com/file/d/1uaBfv_9boxl9pl3IMED5WIGcbsZMjUS9/view?usp=drive_link'><img src='https://img.shields.io/badge/Pretrained-Models-orange'></a>  -->
