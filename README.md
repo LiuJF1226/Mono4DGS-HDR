@@ -7,7 +7,7 @@
     <a href="https://scholar.google.com/citations?hl=en&user=KKzKc_8AAAAJ">Lingtong Kong</a><sup>2</sup>,
     <a href="https://openreview.net/profile?id=~Mi_Zhou1">Mi Zhou</a><sup>2</sup>,
     <a href="https://openreview.net/profile?id=~Jinwei_Chen3">Jinwei Chen</a><sup>2</sup>,
-    <a href="https://www.danxurgb.net/">Dan Xu</a><sup>1</sup>
+    <a href="https://www.danxurgb.net/">Dan Xu</a><sup>1*</sup>
     <br>
         <sup>1</sup>HKUST,
         <sup>2</sup>vivo Mobile Communication Co., Ltd
