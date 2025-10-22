@@ -37,3 +37,14 @@ Demo videos are available at the [project page](https://liujf1226.github.io/Mono
 
 ## Method Overview
 ![framework](https://github.com/user-attachments/assets/bfb0b520-41c0-4567-a648-2c30ee793b44)
+
+## Citation
+If you find our work helpful to your research, please cite our paper:
+```BibTeX
+@article{liu2025mono4dgshdr,
+      title={Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos}, 
+      author={Jinfeng Liu and Lingtong Kong and Mi Zhou and Jinwen Chen and Dan Xu},
+      journal={arXiv preprint arXiv:2510.18489},
+      year={2025},
+}
+```
