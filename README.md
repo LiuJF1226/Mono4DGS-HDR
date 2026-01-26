@@ -1,6 +1,6 @@
 <p align="center">
 <h1 align="center"><strong>Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos</strong></h1>
-<h3 align="center">   </h3>
+<h3 align="center"> ICLR 2026 </h3>
 
 <p align="center">
     <a href="https://scholar.google.com/citations?hl=en&user=-moPItwAAAAJ">Jinfeng Liu</a><sup>1</sup>,</span>
