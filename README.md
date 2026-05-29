@@ -3,7 +3,7 @@
 <h3 align="center"> ICLR 2026 </h3>
 
 <p align="center">
-    <a href="https://scholar.google.com/citations?hl=en&user=-moPItwAAAAJ">Jinfeng Liu</a><sup>1</sup>,</span>
+    <a href="https://liujf1226.github.io/">Jinfeng Liu</a><sup>1</sup>,</span>
     <a href="https://scholar.google.com/citations?hl=en&user=KKzKc_8AAAAJ">Lingtong Kong</a><sup>2</sup>,
     <a href="https://openreview.net/profile?id=~Mi_Zhou1">Mi Zhou</a><sup>2</sup>,
     <a href="https://openreview.net/profile?id=~Jinwei_Chen3">Jinwei Chen</a><sup>2</sup>,
