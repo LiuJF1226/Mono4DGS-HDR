@@ -1,0 +1,9 @@
+defaults: ../base_config.yaml
+
+# scene specific
+data_type: exp3
+name: Skateboarder
+
+# override base config
+epi_th: 0.00001
+dyn_id_cnt: 4

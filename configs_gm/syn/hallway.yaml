@@ -1,0 +1,9 @@
+defaults: ../base_config.yaml
+
+# scene specific
+data_type: syn
+name: hallway
+
+# override base config
+epi_th: 0.0001
+dyn_id_cnt: 8

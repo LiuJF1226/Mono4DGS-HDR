@@ -1,0 +1,10 @@
+defaults: ../base_config.yaml
+
+# scene specific
+data_type: exp2
+name: ThrowingTowel
+
+# override base config
+epi_th: 0.00001
+dyn_id_cnt: 4
+remove_dep_err_thr: 0.8

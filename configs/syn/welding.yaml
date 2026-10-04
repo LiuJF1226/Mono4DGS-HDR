@@ -1,0 +1,10 @@
+defaults: ../base_config.yaml
+
+# scene specific
+data_type: syn
+name: welding
+
+# override base config
+epi_th: 0.00001
+dyn_id_cnt: 6
+weight_dyn_tc: 0.001

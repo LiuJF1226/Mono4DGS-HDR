@@ -1,0 +1,10 @@
+defaults: ../base_config.yaml
+
+# scene specific
+data_type: syn
+name: bridge
+
+# override base config
+epi_th: 0.0001
+dyn_id_cnt: 10
+weight_dyn_tc: 0.01

@@ -1,0 +1,150 @@
+# exp_name: final6_raft_12000
+log_dir: /export1/jliugk/project2/4DGS_HDR/logs
+exp_name: newlog_spatracker_0001
+
+weight_dyn_tc: 0.1
+# metric depth options: unidepth, metric3d
+# video depth options: chronodepth, depthcrafter, VDA, DAV
+dep_mode: depthcrafter 
+# tap options (3d): spatracker, densetrack3d, spatracker2
+# tap options (2d): bootstapir, cotracker
+tap_mode: spatracker
+# flow options: raft, gmflow
+flow_mode: gmflow
+# metric depth options: unidepth, metric3d
+align_metric_model: metric3d
+align_metric_flag: True
+
+# for dynamic denser TAP resample
+prep_depth_boundary_th: 1.0
+tap_chunk_size: 8192  # reduce to save memory, 8196 for spatracker,1024/512 for spatracker2, 4096 for others (24GB GPU)
+n_track_uniform: 16384
+n_track_dynamic: 16384
+
+epi_th: 0.00001
+epi_num_threads: 16
+
+boundary_enhance_th: 1.0 # ! enhance boundary for spatracker
+
+######################################################
+## for bundle
+mode: wild
+ba_epi_th: 0.00005
+ba_tap_loading_min_valid_cnt: 2
+iso_focal: True
+init_cam_with_optimal_fov_results: True #True
+# ba_lr_cam_f: 0.0
+# ba_lr_dep_c: 0.0
+# ba_lr_dep_s: 0.0
+# ba_lr_cam_q: 0.0
+# ba_lr_cam_t: 0.0
+ba_depth_remove_th: 5.0 #30.0
+
+ba_lambda_flow: 1.0
+ba_lambda_depth: 0.1
+ba_lambda_cam_smooth_trans: 0.1
+ba_lambda_cam_smooth_rot: 0.1
+
+ba_fov_search_fallback: 45
+ba_fov_search_N: 100
+ba_fov_search_start: 10 #32
+ba_fov_search_end: 90 #64
+
+robust_depth_decay_th: 1.0
+robust_depth_decay_sigma: 1.0
+robust_std_decay_th: 0.2
+robust_std_decay_sigma: 0.2
+######################################################
+
+tap_loading_min_valid_cnt: 5
+depth_boundary_th: 0.3
+dep_median: 1.0
+dyn_id_cnt: 4
+
+world_gs_radius_max: 0.05
+cam_gs_radius_max: 0.05
+
+
+photo_lr_p: 0.00016
+photo_lr_p_final: 0.0000016
+photo_lr_q: 0.001
+photo_lr_s: 0.005
+photo_lr_o: 0.05
+photo_lr_sph: 0.0025
+photo_lr_np: 0.0001
+photo_lr_np_final: 0.0000016
+photo_lr_nq: 0.001
+photo_lr_nq_final: 0.00001
+photo_lr_nsig: 0.01
+photo_lr_sph_rest_factor: 20.0
+photo_cam_total_steps: 4000
+photo_world_total_steps: 11000
+
+
+photo_lambda_rgb: 1.0
+photo_lambda_dep: 0.01
+photo_lambda_track: 0.01
+photo_track_loss_interval: 4
+photo_track_flow_chance: 0.5
+photo_track_loss_end_step: 6000
+photo_log_step: 200
+
+photo_cam_d_ctrl_densify_steps: 200
+photo_cam_d_ctrl_prune_steps: 200
+photo_cam_d_ctrl_reset_steps: 1000
+photo_cam_d_ctrl_densify_max_grad: 0.0002
+photo_cam_d_ctrl_densify_percent_dense: 0.01
+photo_cam_d_ctrl_prune_opacity_th: 0.005
+photo_cam_d_ctrl_reset_opacity: 0.01
+photo_cam_d_ctrl_start: 200
+photo_cam_d_ctrl_end: 3000
+
+# photo_cam_d_ctrl_densify_steps: 300
+# photo_cam_d_ctrl_prune_steps: 300
+# photo_cam_d_ctrl_reset_steps: 1001
+# photo_cam_d_ctrl_densify_max_grad: 0.0002
+# photo_cam_d_ctrl_densify_percent_dense: 0.01
+# photo_cam_d_ctrl_prune_opacity_th: 0.02
+# photo_cam_d_ctrl_reset_opacity: 0.01
+
+
+# photo_d_ctrl_densify_steps: 200
+# photo_d_ctrl_prune_steps: 200
+# photo_d_ctrl_reset_steps: 1001
+# photo_d_ctrl_densify_max_grad: 0.0001
+# photo_d_ctrl_densify_percent_dense: 0.01
+# photo_d_ctrl_prune_opacity_th: 0.005
+# photo_d_ctrl_reset_opacity: 0.01
+
+# photo_s_ctrl_densify_steps: 400
+# photo_s_ctrl_prune_steps: 400
+# photo_s_ctrl_reset_steps: 2001
+# photo_s_ctrl_densify_max_grad: 0.0002
+# photo_s_ctrl_densify_percent_dense: 0.01
+# photo_s_ctrl_prune_opacity_th: 0.02
+# photo_s_ctrl_reset_opacity: 0.01
+
+photo_d_ctrl_densify_steps: 200
+photo_d_ctrl_prune_steps: 200
+photo_d_ctrl_reset_steps: 2000
+photo_d_ctrl_densify_max_grad: 0.0002
+photo_d_ctrl_densify_percent_dense: 0.01
+photo_d_ctrl_prune_opacity_th: 0.005
+photo_d_ctrl_reset_opacity: 0.01
+photo_d_ctrl_start_1: 200
+photo_d_ctrl_end_1: 5000
+photo_d_ctrl_start_2: 5800
+photo_d_ctrl_end_2: 8000
+
+photo_s_ctrl_densify_steps: 400
+photo_s_ctrl_prune_steps: 400
+photo_s_ctrl_reset_steps: 2000
+photo_s_ctrl_densify_max_grad: 0.0002
+photo_s_ctrl_densify_percent_dense: 0.01
+photo_s_ctrl_prune_opacity_th: 0.005
+photo_s_ctrl_reset_opacity: 0.01
+photo_s_ctrl_start_1: 200
+photo_s_ctrl_end_1: 8000
+photo_s_ctrl_start_2: 5400
+photo_s_ctrl_end_2: 8000
+

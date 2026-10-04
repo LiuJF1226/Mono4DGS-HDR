@@ -1,0 +1,87 @@
+## huggingface_hub
+diffusers==0.30.3
+accelerate==0.31.0
+transformers==4.43.2
+huggingface-hub==0.24.2
+
+kornia
+matplotlib==3.8.4
+numpy==1.26.4
+plyfile
+open3d 
+# # opencv-python==4.5.4.60 # for unknown reason on xgcp cv 4.10 has bug for resize func
+# # opencv-python==4.10.0.84
+opencv-python==4.6.0.66
+opencv-contrib-python==4.6.0.66
+
+imageio==2.25.0
+imageio-ffmpeg 
+scipy
+scikit-learn
+scikit-image
+
+# black 
+# chumpy 
+# rtree 
+tensorboardX 
+tensorboard
+
+transforms3d 
+# munch
+# #opencv-contrib-python==3.4.11.45
+# ipython 
+# jupyter 
+# pycocotools
+
+# rich==13.5.3
+# pyrender==0.1.45 
+# shapely==1.8.4 
+# trimesh==3.12.6 
+# triangle
+# pydot
+
+omegaconf
+# numba
+# hydra-core
+# openpyxl
+
+# cython
+
+# ninja
+# PyOpenGL 
+# glfw 
+# xatlas 
+# gdown
+
+# # ! warning, the timm for unidepth may require 0.9
+# # timm==0.6.7 # for zeodepth old verison
+timm
+
+# configargparse
+easydict
+
+# Pillow==9.5.0
+
+
+einops
+wandb
+
+# # tapier
+# ipympl 
+mediapy==1.2.2
+ffmpeg
+# # chex
+einshape
+
+cupy-cuda11x==12.2.0
+mmcv-full==1.7.2
+
+## spatrackerv2
+flow_vis
+jaxtyping
+decord
+rich
+moviepy==1.0.0
+pycolmap==3.11.1
+pyceres==2.4
+git+https://github.com/EasternJournalist/utils3d.git#egg=utils3d
